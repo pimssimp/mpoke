@@ -543,6 +543,7 @@
 /* Slot avec hover info */
 .mp-box-slot {
   text-align: center;
+  width: 42px;
 }
 
 .mp-box-slot img {
@@ -559,22 +560,28 @@
   border: 1px solid transparent;
 }
 
-.mp-box-slot:hover img {
-  border-color: var(--blue);
+.mp-box-info {
+  display: none;
+  width: 42px;
+  height: 42px;
+  background: var(--blue-dark);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 4px 2px;
+  font-size: 8.5px;
+  color: white;
+  line-height: 1.35;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.mp-box-info {
-  overflow: hidden;
-  max-height: 0;
-  font-size: 9px;
-  color: var(--blue-dark);
-  line-height: 1.4;
-  transition: max-height 0.2s ease;
-  text-align: center;
+.mp-box-slot:hover img {
+  display: none;
 }
 
 .mp-box-slot:hover .mp-box-info {
-  max-height: 60px;
+  display: block;
 }
 
 /* Panels boîte — même mécanique que l'équipe */
