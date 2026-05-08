@@ -152,6 +152,11 @@
   font-size: 10px;
 }
 
+.mp-tcard b,
+.mp-tcard strong {
+  color: #55749a;
+}
+
 /* =========================
    POST 2 — ÉQUIPE
 ========================= */
