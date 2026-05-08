@@ -338,15 +338,18 @@
 }
 
 .mp-poke-focus {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 14px;
-  align-items: center;
+  overflow: hidden;
 }
 
-.mp-poke-focus img {
-  width: 80px;
+.mp-poke-focus > img {
+  float: left !important;
+  width: 80px !important;
+  margin-right: 14px !important;
   image-rendering: pixelated;
+}
+
+.mp-poke-focus > div {
+  overflow: hidden;
 }
 
 .mp-poke-name {
@@ -368,37 +371,33 @@
 
 /* Stats + Attaques côte à côte */
 .mp-poke-bottom {
-  display: table;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 10px 0;
+  overflow: hidden;
   margin-top: 8px;
 }
 
 .mp-poke-bottom-inner {
-  display: table-row;
+  overflow: hidden;
 }
 
 .mp-poke-stats-col {
-  display: table-cell;
-  width: 60%;
-  vertical-align: top;
+  float: left !important;
+  width: 58% !important;
+  box-sizing: border-box;
 }
 
 .mp-poke-moves-col {
-  display: table-cell;
-  width: 40%;
-  vertical-align: top;
+  float: right !important;
+  width: 38% !important;
+  box-sizing: border-box;
 }
 
 .mp-moves-list {
   background: white;
   border-radius: 8px;
-  padding: 6px 8px;
+  padding: 6px 8px 6px 8px;
   font-size: 10px;
   list-style: none;
   margin: 0;
-  padding-left: 8px;
   overflow-y: auto;
   line-height: 1.7;
   border: 1px solid #e5e0d8;
