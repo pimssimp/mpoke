@@ -389,6 +389,7 @@
   float: right !important;
   width: 38% !important;
   box-sizing: border-box;
+  margin-top: 10px
 }
 
 .mp-moves-list {
