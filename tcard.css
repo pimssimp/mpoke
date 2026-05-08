@@ -93,7 +93,7 @@
 
 .mp-portrait {
   float: left !important;
-  width: 100px !important;
+  width: 110px !important;
   margin-right: 18px !important;
   background: var(--beige);
   border-radius: 12px;
@@ -103,8 +103,8 @@
 }
 
 .mp-portrait img {
-  width: 110px !important;
-  max-width: 110px !important;
+  width: 100px !important;
+  max-width: 100px !important;
   height: auto !important;
   display: block !important;
   margin: 0 auto;
