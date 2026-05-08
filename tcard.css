@@ -88,22 +88,27 @@
 ========================= */
 
 .mp-header {
-  float: left;
-  grid-template-columns: 130px 1fr;
-  gap: 18px;
-  align-items: center;
+  overflow: hidden;
 }
 
 .mp-portrait {
+  float: left !important;
+  width: 130px !important;
+  margin-right: 18px !important;
   background: var(--beige);
   border-radius: 12px;
   padding: 10px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .mp-portrait img {
-  width: 110px; max-width: 110px;
-  image-rendering: pixelated;
+  width: 110px !important;
+  max-width: 110px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto;
+  image-rendering: auto;
 }
 
 .mp-info-list {
@@ -111,7 +116,7 @@
 }
 
 .mp-info-row {
-  display: grid;
+  display: grid !important;
   grid-template-columns: 90px 1fr;
   border-bottom: 1px solid #eee;
   padding: 5px 0;
@@ -125,7 +130,7 @@
 }
 
 .mp-nav {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   gap: 6px;
   margin-top: 14px;
