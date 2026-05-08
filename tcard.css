@@ -88,7 +88,7 @@
 ========================= */
 
 .mp-header {
-  display: grid !important;
+  float: left;
   grid-template-columns: 130px 1fr;
   gap: 18px;
   align-items: center;
