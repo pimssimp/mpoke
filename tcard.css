@@ -356,10 +356,7 @@
 }
 
 .mp-moves {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  margin-top: 8px;
+  display: none; /* remplacé par mp-poke-bottom */
 }
 
 .mp-move {
@@ -367,6 +364,53 @@
   border-radius: 8px;
   padding: 5px;
   font-size: 10px;
+}
+
+/* Stats + Attaques côte à côte */
+.mp-poke-bottom {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+  margin-top: 8px;
+}
+
+.mp-poke-bottom-inner {
+  display: table-row;
+}
+
+.mp-poke-stats-col {
+  display: table-cell;
+  width: 60%;
+  vertical-align: top;
+}
+
+.mp-poke-moves-col {
+  display: table-cell;
+  width: 40%;
+  vertical-align: top;
+}
+
+.mp-moves-list {
+  background: white;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 10px;
+  list-style: none;
+  margin: 0;
+  padding-left: 8px;
+  overflow-y: auto;
+  line-height: 1.7;
+  border: 1px solid #e5e0d8;
+}
+
+.mp-moves-list li {
+  border-bottom: 1px solid #f0ece6;
+  padding: 1px 0;
+}
+
+.mp-moves-list li:last-child {
+  border-bottom: none;
 }
 
 
