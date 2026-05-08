@@ -1,5 +1,5 @@
 /* =========================
-   TCARD — BASE
+   TCARD — BASE & COMMUN
 ========================= */
 
 .mp-tcard {
@@ -26,6 +26,74 @@
   box-shadow: 0 4px 12px rgba(0,0,0,.08);
 }
 
+/* Titre principal de section (utilisé sur tous les posts sauf identité) */
+.mp-section-title {
+  text-align: center;
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', serif;
+  margin: 18px 0 12px;
+}
+
+/* Sous-titre de section (ex: "Objets de capture", "Relations"...) */
+.mp-log-title {
+  color: var(--blue-dark);
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--beige-2);
+  padding-bottom: 4px;
+  margin: 14px 0 8px;
+}
+
+.mp-team-title {
+  text-align: center;
+  color: var(--blue);
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin: 20px 0 10px;
+  padding: 6px 0;
+  border-top: 1px solid var(--beige-2);
+  border-bottom: 1px solid var(--beige-2);
+}
+
+
+
+.mp-pill {
+  background: var(--beige);
+  border-radius: 999px;
+  padding: 4px 9px;
+  display: inline-block;
+  margin: 2px;
+  color: var(--blue-dark);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.mp-tcard b,
+.mp-tcard strong {
+  color: #55749a;
+}
+
+/* Grilles génériques (peu utilisées mais gardées) */
+.mp-grid { display: grid; gap: 10px; }
+.mp-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.mp-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.mp-grid-6 { grid-template-columns: repeat(6, 1fr); }
+
+
+/* =========================
+   POST 1 — IDENTITÉ
+========================= */
+
 .mp-title {
   font-size: 22px;
   letter-spacing: 1px;
@@ -40,184 +108,6 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
-.mp-section-title {
-  text-align: center;
-  color: var(--blue);
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: Georgia, 'Times New Roman', serif;
-  margin: 18px 0 12px;
-}
-
-/* =========================
-   LOGISTIQUE — TITRES
-========================= */
-
-.mp-log-title {
-  color: var(--blue-dark);
-  font-size: 13px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid var(--beige-2);
-  padding-bottom: 4px;
-  margin: 14px 0 8px;
-}
-
-.mp-money {
-  text-align: right;
-  color: var(--blue-dark);
-  font-weight: bold;
-  font-size: 13px;
-  margin-bottom: 4px;
-}
-
-/* GRILLES LOGISTIQUE */
-
-.mp-log-3col {
-  display: table;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 8px 0;
-}
-
-.mp-log-3col-inner {
-  display: table-row;
-}
-
-.mp-log-col {
-  display: table-cell;
-  width: 33%;
-  vertical-align: top;
-  background: var(--beige);
-  border-radius: 10px;
-  padding: 8px 10px;
-}
-
-.mp-log-col-title {
-  color: var(--blue);
-  font-weight: bold;
-  font-size: 11px;
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--beige-2);
-  padding-bottom: 3px;
-  margin-bottom: 5px;
-}
-
-.mp-log-col ul {
-  margin: 0;
-  padding-left: 14px;
-}
-
-.mp-log-col li {
-  margin-bottom: 2px;
-}
-
-/* VITAMINES 3x2 */
-.mp-log-vitamines {
-  display: table;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 6px;
-}
-
-.mp-log-vit-row {
-  display: table-row;
-}
-
-.mp-log-vit-cell {
-  display: table-cell;
-  width: 33%;
-  background: var(--beige);
-  border-radius: 8px;
-  padding: 5px 8px;
-  text-align: center;
-  font-size: 11px;
-}
-
-.mp-log-vit-cell b {
-  display: block;
-  color: var(--blue-dark);
-  font-size: 12px;
-}
-
-/* BAIES 4 colonnes */
-.mp-log-4col {
-  display: table;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 8px 0;
-}
-
-.mp-log-4col-inner {
-  display: table-row;
-}
-
-.mp-log-4col .mp-log-col {
-  width: 25%;
-}
-
-/* LISTE SOINS inline */
-.mp-log-inline {
-  display: table;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 8px 0;
-}
-
-.mp-log-inline-inner {
-  display: table-row;
-}
-
-.mp-log-inline-col {
-  display: table-cell;
-  width: 33%;
-  vertical-align: top;
-  font-size: 11px;
-  padding: 4px 6px;
-}
-
-.mp-line {
-  height: 1px;
-  background: var(--beige-2);
-  margin: 16px 0;
-}
-
-.mp-grid {
-  display: grid;
-  gap: 10px;
-}
-
-.mp-grid-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.mp-grid-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.mp-grid-6 {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.mp-pill {
-  background: var(--beige);
-  border-radius: 999px;
-  padding: 4px 9px;
-  display: inline-block;
-  margin: 2px;
-  color: var(--blue-dark);
-  font-size: 10px;
-  text-transform: uppercase;
-}
-
-/* =========================
-   POST 1 — IDENTITÉ
-========================= */
 
 .mp-header {
   overflow: hidden;
@@ -244,6 +134,8 @@
   margin: 0 auto;
   image-rendering: auto;
   object-fit: cover;
+  border: 2px solid var(--beige-2);
+  border-radius: 8px;
 }
 
 .mp-info-list {
@@ -284,8 +176,106 @@
   font-size: 10px;
 }
 
+
 /* =========================
-   POST 2 — ÉQUIPE
+   POST 2 — LOGISTIQUE
+========================= */
+
+.mp-money {
+  text-align: right;
+  color: var(--blue-dark);
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* Colonnes en table (robuste sur forums) */
+.mp-log-3col {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 8px 0;
+}
+
+.mp-log-3col-inner {
+  display: table-row;
+}
+
+.mp-log-col {
+  display: table-cell;
+  width: 33%;
+  vertical-align: top;
+  background: var(--beige);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.mp-log-col-title {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--beige-2);
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+}
+
+.mp-log-col ul {
+  margin: 0;
+  padding-left: 14px;
+}
+
+.mp-log-col li {
+  margin-bottom: 2px;
+}
+
+/* Vitamines 3x2 */
+.mp-log-vitamines {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 6px;
+}
+
+.mp-log-vit-row {
+  display: table-row;
+}
+
+.mp-log-vit-cell {
+  display: table-cell;
+  width: 33%;
+  background: var(--beige);
+  border-radius: 8px;
+  padding: 5px 8px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.mp-log-vit-cell b {
+  display: block;
+  color: var(--blue-dark);
+  font-size: 12px;
+}
+
+/* Baies 4 colonnes */
+.mp-log-4col {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 8px 0;
+}
+
+.mp-log-4col-inner {
+  display: table-row;
+}
+
+.mp-log-4col .mp-log-col {
+  width: 25%;
+}
+
+
+/* =========================
+   POST 3 — ÉQUIPES
 ========================= */
 
 .mp-team-tabs input {
@@ -306,6 +296,21 @@
   text-align: center;
   cursor: pointer;
   border: 1px solid transparent;
+}
+
+.mp-team-icons label:hover {
+  border-color: var(--blue);
+  background: #e7ddd0;
+}
+
+.mp-team-tabs input:nth-of-type(1):checked ~ .mp-team-icons label:nth-child(1),
+.mp-team-tabs input:nth-of-type(2):checked ~ .mp-team-icons label:nth-child(2),
+.mp-team-tabs input:nth-of-type(3):checked ~ .mp-team-icons label:nth-child(3),
+.mp-team-tabs input:nth-of-type(4):checked ~ .mp-team-icons label:nth-child(4),
+.mp-team-tabs input:nth-of-type(5):checked ~ .mp-team-icons label:nth-child(5),
+.mp-team-tabs input:nth-of-type(6):checked ~ .mp-team-icons label:nth-child(6) {
+  border-color: var(--blue-dark);
+  background: var(--white);
 }
 
 .mp-team-icons img {
@@ -358,6 +363,16 @@
   font-weight: bold;
 }
 
+.mp-types {
+  display: flex;
+  gap: 4px;
+  margin: 4px 0;
+}
+
+.mp-types img {
+  height: 16px;
+}
+
 .mp-moves {
   display: none; /* remplacé par mp-poke-bottom */
 }
@@ -389,15 +404,13 @@
   float: right !important;
   width: 38% !important;
   box-sizing: border-box;
-  .mp-poke-moves-col {
-  margin-top: 10px;
-}
+  margin-top: 20px;
 }
 
 .mp-moves-list {
   background: white;
   border-radius: 8px;
-  padding: 6px 8px 6px 8px;
+  padding: 6px 8px;
   font-size: 10px;
   list-style: none;
   margin: 0;
@@ -415,35 +428,6 @@
   border-bottom: none;
 }
 
-
-.mp-team-icons label:hover {
-  border-color: var(--blue);
-  background: #e7ddd0;
-}
-
-.mp-team-tabs input:nth-of-type(1):checked ~ .mp-team-icons label:nth-child(1),
-.mp-team-tabs input:nth-of-type(2):checked ~ .mp-team-icons label:nth-child(2),
-.mp-team-tabs input:nth-of-type(3):checked ~ .mp-team-icons label:nth-child(3),
-.mp-team-tabs input:nth-of-type(4):checked ~ .mp-team-icons label:nth-child(4),
-.mp-team-tabs input:nth-of-type(5):checked ~ .mp-team-icons label:nth-child(5),
-.mp-team-tabs input:nth-of-type(6):checked ~ .mp-team-icons label:nth-child(6) {
-  border-color: var(--blue-dark);
-  background: var(--white);
-}
-
-
-/* Types (icônes) */
-.mp-types {
-  display: flex;
-  gap: 4px;
-  margin: 4px 0;
-}
-
-.mp-types img {
-  height: 16px;
-}
-
-/* Stats */
 .mp-stats {
   margin-top: 10px;
   font-size: 10px;
@@ -479,9 +463,25 @@
 
 
 /* =========================
-   POST 3 — BOÎTE
+   POST 4 — BOÎTE
 ========================= */
 
+.mp-box-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.mp-box-grid img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  background: var(--beige);
+  border-radius: 8px;
+  padding: 4px;
+}
 
 .mp-utility-grid {
   display: grid;
@@ -519,45 +519,9 @@
   line-height: 1.35;
 }
 
-.mp-box-grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 8px;
-  text-align: center;
-}
-
-.mp-box-grid img {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
-  image-rendering: pixelated;
-  background: var(--beige);
-  border-radius: 8px;
-  padding: 4px;
-}
 
 /* =========================
-   POST 4 — INVENTAIRE
-========================= */
-
-.mp-inventory {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.mp-inv-block {
-  background: var(--beige);
-  border-radius: 12px;
-  padding: 10px;
-}
-
-.mp-inv-block b {
-  color: var(--blue-dark);
-}
-
-/* =========================
-   POST 5 — RELATIONS / RP
+   POST 5 — RELATIONS & CHRONOLOGIE
 ========================= */
 
 .mp-relation {
@@ -581,4 +545,10 @@
   border-left: 3px solid var(--blue);
   padding-left: 10px;
   margin-bottom: 10px;
+}
+
+.mp-line {
+  height: 1px;
+  background: var(--beige-2);
+  margin: 16px 0;
 }
