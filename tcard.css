@@ -112,6 +112,8 @@
   margin: 0 auto;
   image-rendering: auto;
   object-fit: cover;
+  border: 2px solid var(--beige-2);
+  border-radius: 8px;
 }
 
 .mp-info-list {
