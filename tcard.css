@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/scl/fi/iydm9a5lp4p80iguw8kak/tcard.css?rlkey=35xl6xbwbgr1vu1sacpvepa27">
+
+<div class="mp-tcard" id="accueil">
+  <div class="mp-card">
+
+    <div class="mp-header">
+      <div class="mp-portrait">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/zmt86kwhvtfclf7y5cw4l/tcardthumbnail.jpg?rlkey=a20xs5xy56ufywvs57h3da7ph">
+      </div>
+
+      <div>
+        <div class="mp-title">Nom Prénom</div>
+        <div class="mp-subtitle">Placeholder de sous-titre</div>
+
+        <div class="mp-info-list">
+          <div class="mp-info-row"><div class="mp-info-label">Âge</div><div>30 ans</div></div>
+          <div class="mp-info-row"><div class="mp-info-label">Ville</div><div>???</div></div>
+          <div class="mp-info-row"><div class="mp-info-label">Statut</div><div>Dresseur</div></div>
+          <div class="mp-info-row"><div class="mp-info-label">Métier</div><div>Gérant d’un salon de toilettage</div></div>
+
+        </div>
+
+        <div class="mp-nav">
+          <a href="#inventaire">Inventaire</a>
+          <a href="#equipe">Équipe</a>
+          <a href="#boite">Boîte</a>
+          <a href="#relations">Relations</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mp-line"></div>
+
+    <p>
+      lorem ipsum mécouille
+              <img src="https://2img.net/i.imgur.com/GC9egyX.png">
+    </p>
+
+  </div>
+</div>
