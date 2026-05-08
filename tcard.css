@@ -544,6 +544,8 @@
 .mp-box-slot {
   text-align: center;
   width: 42px;
+  height: 42px;
+  overflow: hidden;
 }
 
 .mp-box-slot img {
@@ -557,31 +559,37 @@
   display: block;
   margin: 0 auto;
   box-sizing: border-box;
-  border: 1px solid transparent;
 }
 
 .mp-box-info {
-  display: none;
   width: 42px;
-  height: 42px;
+  height: 0;
+  overflow: hidden;
   background: var(--blue-dark);
   border-radius: 8px;
   box-sizing: border-box;
-  padding: 4px 2px;
   font-size: 8.5px;
   color: white;
   line-height: 1.35;
   text-align: center;
-  overflow: hidden;
   margin: 0 auto;
 }
 
+.mp-box-slot:hover {
+  overflow: visible;
+  height: 42px;
+}
+
 .mp-box-slot:hover img {
-  display: none;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .mp-box-slot:hover .mp-box-info {
-  display: block;
+  height: 42px;
+  padding: 4px 2px;
+  margin-top: -42px;
 }
 
 /* Panels boîte — même mécanique que l'équipe */
