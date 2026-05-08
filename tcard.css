@@ -95,6 +95,7 @@
   float: left !important;
   width: 130px !important;
   margin-right: 18px !important;
+  margin-top: 36px !important;
   background: var(--beige);
   border-radius: 12px;
   padding: 10px;
@@ -105,10 +106,12 @@
 .mp-portrait img {
   width: 110px !important;
   max-width: 110px !important;
+  min-height: 140px !important;
   height: auto !important;
   display: block !important;
   margin: 0 auto;
   image-rendering: auto;
+  object-fit: cover;
 }
 
 .mp-info-list {
@@ -119,10 +122,14 @@
   display: grid !important;
   grid-template-columns: 90px 1fr;
   border-bottom: 1px solid #eee;
-  padding: 5px 0;
+  padding: 2px 0 !important;
+  overflow: hidden;
+  line-height: 1.4 !important;
 }
 
 .mp-info-label {
+  float: left !important;
+  width: 90px !important;
   color: var(--blue-dark);
   font-weight: bold;
   text-transform: uppercase;
