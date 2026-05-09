@@ -528,7 +528,7 @@
  
 .mp-box-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 6px;
   text-align: center;
 }
@@ -536,14 +536,14 @@
 /* Slot avec hover info */
 .mp-box-slot {
   text-align: center;
-  width: 52px;
-  height: 52px;
+  width: 68px;
+  height: 68px;
   overflow: hidden;
 }
  
 .mp-box-slot img {
-  width: 52px;
-  height: 52px;
+  width: 68px;
+  height: 68px;
   object-fit: contain;
   image-rendering: pixelated;
   background: var(--white);
