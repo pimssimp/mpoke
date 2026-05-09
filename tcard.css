@@ -26,7 +26,6 @@
   box-shadow: 0 4px 12px rgba(0,0,0,.08);
 }
 
-/* Titre principal de section (utilisé sur tous les posts sauf identité) */
 .mp-section-title {
   text-align: center;
   color: var(--blue);
@@ -39,7 +38,6 @@
   margin: 18px 0 12px;
 }
 
-/* Sous-titre de section (ex: "Objets de capture", "Relations"...) */
 .mp-log-title {
   color: var(--blue-dark);
   font-size: 13px;
@@ -65,7 +63,11 @@
   border-bottom: 1px solid var(--beige-2);
 }
 
-
+.mp-line {
+  height: 1px;
+  background: var(--beige-2);
+  margin: 16px 0;
+}
 
 .mp-pill {
   background: var(--beige);
@@ -83,7 +85,6 @@
   color: #55749a;
 }
 
-/* Grilles génériques (peu utilisées mais gardées) */
 .mp-grid { display: grid; gap: 10px; }
 .mp-grid-2 { grid-template-columns: repeat(2, 1fr); }
 .mp-grid-3 { grid-template-columns: repeat(3, 1fr); }
@@ -189,7 +190,6 @@
   margin-bottom: 4px;
 }
 
-/* Colonnes en table (robuste sur forums) */
 .mp-log-3col {
   display: table;
   width: 100%;
@@ -229,7 +229,6 @@
   margin-bottom: 2px;
 }
 
-/* Vitamines 3x2 */
 .mp-log-vitamines {
   display: table;
   width: 100%;
@@ -257,7 +256,6 @@
   font-size: 12px;
 }
 
-/* Baies 4 colonnes */
 .mp-log-4col {
   display: table;
   width: 100%;
@@ -320,6 +318,12 @@
   image-rendering: pixelated;
 }
 
+.mp-team-icons span {
+  display: block;
+  font-size: 10px;
+  color: var(--blue-dark);
+}
+
 .mp-poke-panel {
   display: none;
   background: #f4f0ea;
@@ -368,7 +372,7 @@
 }
 
 .mp-moves {
-  display: none; /* remplacé par mp-poke-bottom */
+  display: none;
 }
 
 .mp-move {
@@ -378,7 +382,6 @@
   font-size: 10px;
 }
 
-/* Stats + Attaques côte à côte */
 .mp-poke-bottom {
   overflow: hidden;
   margin-top: 8px;
@@ -459,17 +462,18 @@
 /* =========================
    POST 4 — BOÎTE
 ========================= */
+
 .mp-box-tabs input[type="radio"] {
   display: none;
 }
- 
+
 .mp-box-tab-labels {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4px;
   margin-bottom: 0;
 }
- 
+
 .mp-box-tab-labels label {
   text-align: center;
   padding: 5px 4px;
@@ -484,11 +488,11 @@
   border: 1px solid var(--beige-2);
   border-bottom: none;
 }
- 
+
 .mp-box-tab-labels label:hover {
   color: var(--blue);
 }
- 
+
 .mp-box-tabs input:nth-of-type(1):checked ~ .mp-box-tab-labels label:nth-child(1),
 .mp-box-tabs input:nth-of-type(2):checked ~ .mp-box-tab-labels label:nth-child(2),
 .mp-box-tabs input:nth-of-type(3):checked ~ .mp-box-tab-labels label:nth-child(3),
@@ -497,7 +501,7 @@
   color: var(--blue-dark);
   border-bottom: 2px solid var(--white);
 }
- 
+
 .mp-box-container {
   background: var(--beige);
   border: 1px solid var(--beige-2);
@@ -508,39 +512,38 @@
   scrollbar-width: thin;
   scrollbar-color: var(--beige-2) transparent;
 }
- 
+
 .mp-box-container::-webkit-scrollbar {
   width: 4px;
 }
- 
+
 .mp-box-container::-webkit-scrollbar-track {
   background: transparent;
 }
- 
+
 .mp-box-container::-webkit-scrollbar-thumb {
   background: var(--beige-2);
   border-radius: 4px;
 }
- 
+
 .mp-box-container::-webkit-scrollbar-thumb:hover {
   background: var(--blue);
 }
- 
+
 .mp-box-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 6px;
   text-align: center;
 }
- 
-/* Slot avec hover info */
+
 .mp-box-slot {
   text-align: center;
   width: 68px;
   height: 68px;
   overflow: hidden;
 }
- 
+
 .mp-box-slot img {
   width: 68px;
   height: 68px;
@@ -553,7 +556,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
- 
+
 .mp-box-info {
   width: 68px;
   height: 0;
@@ -561,48 +564,47 @@
   background: var(--blue-dark);
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 8.5px;
+  font-size: 9px;
   color: white;
-  line-height: 1.35;
+  line-height: 1.4;
   text-align: center;
   margin: 0 auto;
 }
- 
+
 .mp-box-slot:hover {
   height: 68px;
 }
- 
+
 .mp-box-slot:hover img {
   height: 0;
   padding: 0;
   overflow: hidden;
 }
- 
+
 .mp-box-slot:hover .mp-box-info {
-  height: 52px;
-  padding: 6px 2px;
+  height: 68px;
+  padding: 10px 4px;
   margin-top: -68px;
 }
- 
-/* Panels boîte — même mécanique que l'équipe */
+
 .mp-box-panel {
   display: none;
 }
- 
+
 #boite1:checked ~ .mp-box-panels .mp-box-panel:nth-child(1),
 #boite2:checked ~ .mp-box-panels .mp-box-panel:nth-child(2),
 #boite3:checked ~ .mp-box-panels .mp-box-panel:nth-child(3),
 #boite4:checked ~ .mp-box-panels .mp-box-panel:nth-child(4) {
   display: block;
 }
- 
+
 .mp-utility-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-bottom: 18px;
 }
- 
+
 .mp-utility-mon {
   display: grid;
   grid-template-columns: 54px 1fr;
@@ -612,20 +614,20 @@
   border-radius: 10px;
   padding: 8px;
 }
- 
+
 .mp-utility-mon img {
   width: 48px;
   height: 48px;
   object-fit: contain;
   image-rendering: pixelated;
 }
- 
+
 .mp-utility-name {
   color: var(--blue-dark);
   font-weight: bold;
   font-size: 12px;
 }
- 
+
 .mp-utility-detail {
   font-size: 10px;
   color: var(--ink);
@@ -658,10 +660,4 @@
   border-left: 3px solid var(--blue);
   padding-left: 10px;
   margin-bottom: 10px;
-}
-
-.mp-line {
-  height: 1px;
-  background: var(--beige-2);
-  margin: 16px 0;
 }
