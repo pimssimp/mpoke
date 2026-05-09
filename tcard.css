@@ -543,14 +543,14 @@
 /* Slot avec hover info */
 .mp-box-slot {
   text-align: center;
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   overflow: hidden;
 }
 
 .mp-box-slot img {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
   image-rendering: pixelated;
   background: var(--white);
@@ -562,7 +562,7 @@
 }
 
 .mp-box-info {
-  width: 42px;
+  width: 52px;
   height: 0;
   overflow: hidden;
   background: var(--blue-dark);
@@ -576,7 +576,7 @@
 }
 
 .mp-box-slot:hover {
-  height: 42px;
+  height: 52px;
 }
 
 .mp-box-slot:hover img {
@@ -586,9 +586,9 @@
 }
 
 .mp-box-slot:hover .mp-box-info {
-  height: 42px;
+  height: 52px;
   padding: 4px 2px
-   margin-top: -42px;
+   margin-top: -52px;
 }
 
 /* Panels boîte — même mécanique que l'équipe */
