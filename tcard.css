@@ -307,8 +307,8 @@
 }
 
 .mp-team-icons img {
-  width: 68px;
-  height: 68px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   image-rendering: pixelated;
 }
