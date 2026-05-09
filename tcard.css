@@ -222,8 +222,7 @@
 
 .mp-log-col ul {
   margin: 0;
-  padding-left: 8px;
-  list-style: none;
+  padding-left: 14px;
 }
 
 .mp-log-col li {
@@ -629,25 +628,88 @@
 
 
 /* =========================
-   POST 5 — RELATIONS & CHRONOLOGIE
+   POST 5 — LES GENS
 ========================= */
 
-.mp-relation {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 10px;
+.mp-people-grid {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+  margin-bottom: 10px;
+}
+
+.mp-people-grid-inner {
+  display: table-row;
+}
+
+.mp-person {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
   background: #f4f0ea;
   border-radius: 12px;
   padding: 10px;
-  margin-bottom: 8px;
 }
 
-.mp-relation img {
-  width: 60px;
-  height: 60px;
+.mp-person-inner {
+  overflow: hidden;
+}
+
+.mp-person-portrait {
+  float: left !important;
+  width: 70px !important;
+  margin-right: 10px !important;
+  text-align: center;
+}
+
+.mp-person-portrait img {
+  width: 70px !important;
+  height: 70px !important;
   object-fit: cover;
   border-radius: 8px;
+  display: block !important;
 }
+
+.mp-person-name {
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  color: var(--blue-dark);
+  text-align: center;
+  margin-top: 4px;
+}
+
+.mp-person-role {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.mp-person-text {
+  overflow: hidden;
+  max-height: 90px;
+  overflow-y: auto;
+  font-size: 11px;
+  line-height: 1.5;
+  scrollbar-width: thin;
+  scrollbar-color: var(--beige-2) transparent;
+}
+
+.mp-person-text::-webkit-scrollbar {
+  width: 3px;
+}
+
+.mp-person-text::-webkit-scrollbar-thumb {
+  background: var(--beige-2);
+  border-radius: 3px;
+}
+
+/* =========================
+   POST 6 — CHRONOLOGIE
+========================= */
 
 .mp-timeline-entry {
   border-left: 3px solid var(--blue);
