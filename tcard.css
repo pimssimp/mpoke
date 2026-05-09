@@ -314,16 +314,10 @@
 }
 
 .mp-team-icons img {
-  width: 46px;
-  height: 46px;
+  width: 68px;
+  height: 68px;
   object-fit: contain;
   image-rendering: pixelated;
-}
-
-.mp-team-icons span {
-  display: block;
-  font-size: 10px;
-  color: var(--blue-dark);
 }
 
 .mp-poke-panel {
