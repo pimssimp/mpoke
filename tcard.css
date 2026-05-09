@@ -351,10 +351,9 @@
 .mp-poke-focus {
   overflow: hidden;
 }
-
 .mp-poke-focus > img {
   float: left !important;
-  width: 80px !important;
+  width: 100px !important;
   margin-right: 14px !important;
   image-rendering: pixelated;
 }
