@@ -222,7 +222,8 @@
 
 .mp-log-col ul {
   margin: 0;
-  padding-left: 14px;
+  padding-left: 8px;
+  list-style: none;
 }
 
 .mp-log-col li {
