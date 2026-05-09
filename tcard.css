@@ -660,11 +660,12 @@
 }
 
 .mp-person {
-  overflow: hidden;
+  display: table;
+  width: 100%;
   background: var(--white);
   border-radius: 10px;
-  padding: 10px;
   margin-bottom: 8px;
+  box-sizing: border-box;
 }
 
 .mp-person:last-child {
@@ -672,18 +673,25 @@
 }
 
 .mp-person-portrait {
-  float: left !important;
-  width: 150px !important;
-  margin-right: 12px !important;
-  text-align: center;
+  display: table-cell;
+  width: 150px;
+  vertical-align: top;
+  padding: 10px;
 }
 
 .mp-person-portrait img {
   width: 150px !important;
   height: 200px !important;
+  max-width: 150px !important;
   object-fit: cover;
   border-radius: 8px;
   display: block !important;
+}
+
+.mp-person-content {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px 10px 10px 0;
 }
 
 .mp-person-name {
@@ -712,8 +720,64 @@
    POST 6 — CHRONOLOGIE
 ========================= */
 
-.mp-timeline-entry {
-  border-left: 3px solid var(--blue);
-  padding-left: 10px;
-  margin-bottom: 10px;
+.mp-chrono-arc {
+  margin-bottom: 16px;
 }
+
+.mp-chrono-arc-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--blue);
+  border-bottom: 1px solid var(--beige-2);
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.mp-chrono-entry {
+  font-size: 11px;
+  padding: 5px 8px;
+  margin-bottom: 4px;
+  background: var(--beige);
+  border-radius: 6px;
+  border-left: 4px solid var(--beige-2);
+  line-height: 1.5;
+}
+
+.mp-chrono-entry.en-cours {
+  border-left-color: #55749a;
+}
+
+.mp-chrono-entry.termine {
+  border-left-color: #6a9e6a;
+}
+
+.mp-chrono-entry.abandonne {
+  border-left-color: #b56b6b;
+}
+
+.mp-chrono-entry a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.mp-chrono-entry a:hover {
+  text-decoration: underline;
+}
+
+.mp-chrono-legende {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 14px;
+  padding-top: 8px;
+  border-top: 1px solid var(--beige-2);
+}
+
+.mp-chrono-legende span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dot-encours { color: #55749a; }
+.dot-termine { color: #6a9e6a; }
+.dot-abandonne { color: #b56b6b; }
