@@ -459,18 +459,17 @@
 /* =========================
    POST 4 — BOÎTE
 ========================= */
-
 .mp-box-tabs input[type="radio"] {
   display: none;
 }
-
+ 
 .mp-box-tab-labels {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4px;
   margin-bottom: 0;
 }
-
+ 
 .mp-box-tab-labels label {
   text-align: center;
   padding: 5px 4px;
@@ -485,11 +484,11 @@
   border: 1px solid var(--beige-2);
   border-bottom: none;
 }
-
+ 
 .mp-box-tab-labels label:hover {
   color: var(--blue);
 }
-
+ 
 .mp-box-tabs input:nth-of-type(1):checked ~ .mp-box-tab-labels label:nth-child(1),
 .mp-box-tabs input:nth-of-type(2):checked ~ .mp-box-tab-labels label:nth-child(2),
 .mp-box-tabs input:nth-of-type(3):checked ~ .mp-box-tab-labels label:nth-child(3),
@@ -498,7 +497,7 @@
   color: var(--blue-dark);
   border-bottom: 2px solid var(--white);
 }
-
+ 
 .mp-box-container {
   background: var(--beige);
   border: 1px solid var(--beige-2);
@@ -509,31 +508,31 @@
   scrollbar-width: thin;
   scrollbar-color: var(--beige-2) transparent;
 }
-
+ 
 .mp-box-container::-webkit-scrollbar {
   width: 4px;
 }
-
+ 
 .mp-box-container::-webkit-scrollbar-track {
   background: transparent;
 }
-
+ 
 .mp-box-container::-webkit-scrollbar-thumb {
   background: var(--beige-2);
   border-radius: 4px;
 }
-
+ 
 .mp-box-container::-webkit-scrollbar-thumb:hover {
   background: var(--blue);
 }
-
+ 
 .mp-box-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 6px;
   text-align: center;
 }
-
+ 
 /* Slot avec hover info */
 .mp-box-slot {
   text-align: center;
@@ -541,7 +540,7 @@
   height: 52px;
   overflow: hidden;
 }
-
+ 
 .mp-box-slot img {
   width: 52px;
   height: 52px;
@@ -554,7 +553,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-
+ 
 .mp-box-info {
   width: 52px;
   height: 0;
@@ -568,42 +567,42 @@
   text-align: center;
   margin: 0 auto;
 }
-
+ 
 .mp-box-slot:hover {
   height: 52px;
 }
-
+ 
 .mp-box-slot:hover img {
   height: 0;
   padding: 0;
   overflow: hidden;
 }
-
+ 
 .mp-box-slot:hover .mp-box-info {
   height: 52px;
   padding: 6px 2px;
   margin-top: -52px;
 }
-
+ 
 /* Panels boîte — même mécanique que l'équipe */
 .mp-box-panel {
   display: none;
 }
-
+ 
 #boite1:checked ~ .mp-box-panels .mp-box-panel:nth-child(1),
 #boite2:checked ~ .mp-box-panels .mp-box-panel:nth-child(2),
 #boite3:checked ~ .mp-box-panels .mp-box-panel:nth-child(3),
 #boite4:checked ~ .mp-box-panels .mp-box-panel:nth-child(4) {
   display: block;
 }
-
+ 
 .mp-utility-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-bottom: 18px;
 }
-
+ 
 .mp-utility-mon {
   display: grid;
   grid-template-columns: 54px 1fr;
@@ -613,20 +612,20 @@
   border-radius: 10px;
   padding: 8px;
 }
-
+ 
 .mp-utility-mon img {
   width: 48px;
   height: 48px;
   object-fit: contain;
   image-rendering: pixelated;
 }
-
+ 
 .mp-utility-name {
   color: var(--blue-dark);
   font-weight: bold;
   font-size: 12px;
 }
-
+ 
 .mp-utility-detail {
   font-size: 10px;
   color: var(--ink);
