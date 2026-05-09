@@ -286,17 +286,9 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 8px;
-  margin-bottom: 2px;
+  margin-bottom: 16px;
 }
 
-.mp-team-icons label {
-  background: var(--beige);
-  border-radius: 12px;
-  padding: 8px 4px;
-  text-align: center;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
 
 
 .mp-team-icons label:hover {
@@ -321,6 +313,11 @@
   image-rendering: pixelated;
 }
 
+.mp-team-icons span {
+  display: block;
+  font-size: 10px;
+  color: var(--blue-dark);
+}
 
 .mp-poke-panel {
   display: none;
@@ -545,8 +542,8 @@
 }
 
 .mp-box-slot img {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
   image-rendering: pixelated;
   background: var(--white);
