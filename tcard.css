@@ -631,80 +631,81 @@
    POST 5 — LES GENS
 ========================= */
 
-.mp-people-grid {
-  display: table;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 10px 0;
-  margin-bottom: 10px;
+.mp-people-box {
+  background: var(--beige);
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--beige-2) transparent;
+  margin-bottom: 14px;
 }
 
-.mp-people-grid-inner {
-  display: table-row;
+.mp-people-box::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mp-people-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mp-people-box::-webkit-scrollbar-thumb {
+  background: var(--beige-2);
+  border-radius: 4px;
+}
+
+.mp-people-box::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
 }
 
 .mp-person {
-  display: table-cell;
-  width: 50%;
-  vertical-align: top;
-  background: #f4f0ea;
-  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  border-radius: 10px;
   padding: 10px;
+  margin-bottom: 8px;
 }
 
-.mp-person-inner {
-  overflow: hidden;
+.mp-person:last-child {
+  margin-bottom: 0;
 }
 
 .mp-person-portrait {
   float: left !important;
-  width: 70px !important;
-  margin-right: 10px !important;
+  width: 150px !important;
+  margin-right: 12px !important;
   text-align: center;
 }
 
 .mp-person-portrait img {
-  width: 70px !important;
-  height: 70px !important;
+  width: 150px !important;
+  height: 200px !important;
   object-fit: cover;
   border-radius: 8px;
   display: block !important;
 }
 
 .mp-person-name {
-  font-size: 13px;
+  font-size: 14px;
   font-family: Georgia, 'Times New Roman', serif;
   font-style: italic;
   color: var(--blue-dark);
-  text-align: center;
-  margin-top: 4px;
+  margin-bottom: 2px;
 }
 
 .mp-person-role {
   font-size: 9px;
   text-transform: uppercase;
   color: var(--muted);
-  text-align: center;
   letter-spacing: 0.5px;
+  margin-bottom: 6px;
 }
 
 .mp-person-text {
-  overflow: hidden;
-  max-height: 90px;
-  overflow-y: auto;
   font-size: 11px;
-  line-height: 1.5;
-  scrollbar-width: thin;
-  scrollbar-color: var(--beige-2) transparent;
-}
-
-.mp-person-text::-webkit-scrollbar {
-  width: 3px;
-}
-
-.mp-person-text::-webkit-scrollbar-thumb {
-  background: var(--beige-2);
-  border-radius: 3px;
+  line-height: 1.6;
+  color: var(--ink);
 }
 
 /* =========================
