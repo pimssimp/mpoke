@@ -289,6 +289,14 @@
   margin-bottom: 2px;
 }
 
+.mp-team-icons label {
+  background: var(--beige);
+  border-radius: 12px;
+  padding: 8px 4px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
 
 
 .mp-team-icons label:hover {
@@ -307,17 +315,12 @@
 }
 
 .mp-team-icons img {
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   object-fit: contain;
   image-rendering: pixelated;
 }
 
-.mp-team-icons span {
-  display: block;
-  font-size: 10px;
-  color: var(--blue-dark);
-}
 
 .mp-poke-panel {
   display: none;
