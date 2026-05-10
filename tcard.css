@@ -222,7 +222,8 @@
 
 .mp-log-col ul {
   margin: 0;
-  padding-left: 14px;
+  padding-left: 8px;
+  list-style: none;
 }
 
 .mp-log-col li {
@@ -336,24 +337,17 @@
 #poke3:checked ~ .mp-panels .panel3,
 #poke4:checked ~ .mp-panels .panel4,
 #poke5:checked ~ .mp-panels .panel5,
-#poke6:checked ~ .mp-panels .panel6,
-#poke2-1:checked ~ .mp-panels .panel1,
-#poke2-2:checked ~ .mp-panels .panel2,
-#poke2-3:checked ~ .mp-panels .panel3,
-#poke2-4:checked ~ .mp-panels .panel4,
-#poke2-5:checked ~ .mp-panels .panel5,
-#poke2-6:checked ~ .mp-panels .panel6 {
-  display: block;
-}{
+#poke6:checked ~ .mp-panels .panel6 {
   display: block;
 }
 
 .mp-poke-focus {
   overflow: hidden;
 }
+
 .mp-poke-focus > img {
   float: left !important;
-  width: 100px !important;
+  width: 80px !important;
   margin-right: 14px !important;
   image-rendering: pixelated;
 }
