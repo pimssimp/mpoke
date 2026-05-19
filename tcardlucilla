@@ -6,7 +6,7 @@
 .mp-tcard {
   --beige: #efe7dc;
   --beige-2: #d7c6b7;
-  --blue: #55749a;
+  --blue: #7c1529;
   --blue-dark: #2f4b68;
   --ink: #2d2d2d;
   --muted: #777;
