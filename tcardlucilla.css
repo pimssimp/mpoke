@@ -340,7 +340,7 @@
 #poke6:checked ~ .mp-panels .panel6 {
   display: block;
 }
-}
+
 #poke2-1:checked ~ .mp-panels .panel1,
 #poke2-2:checked ~ .mp-panels .panel2,
 #poke2-3:checked ~ .mp-panels .panel3,
