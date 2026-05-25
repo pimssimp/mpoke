@@ -423,7 +423,7 @@
   overflow-y: auto;
   line-height: 1.7;
   border: 1px solid #e5e0d8;
-  max-height: 120px;
+  max-height: 100px;
 }
 
 .mp-moves-list li {
